@@ -218,6 +218,14 @@ ul {
     background: var(--accent-dark);
 }
 
+.nav-menu a.btn-nav {
+    color: var(--white);
+}
+
+.nav-menu a.btn-nav:hover {
+    color: var(--white);
+}
+
 /* ===== NAVIGATION ===== */
 .navbar {
     position: fixed;
