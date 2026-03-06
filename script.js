@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     const animateElements = document.querySelectorAll(
-        '.problem-card, .feature-card, .testimonial-card, .step, .solution-list li'
+        '.problem-card, .testimonial-card, .step'
     );
     
     animateElements.forEach(el => {
