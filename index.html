@@ -26,7 +26,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">
+            <a href="#hero" class="logo">
                 <img src="assets/logo.png" alt="Nyumba Track" class="logo-img">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="btn btn-nav">Get Started</a></li>
+                <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
             </ul>
         </div>
     </nav>
@@ -111,13 +111,17 @@
                 </p>
             </div>
             <div class="video-wrapper">
-                <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID"
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="assets/dashboard.png"
+                    style="width:100%;border-radius:12px;background:#000;"
                     title="Nyumba Track Demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-                <p class="video-placeholder-note">Replace VIDEO_ID in the code with your YouTube video ID when ready.</p>
+                >
+                    <source src="assets/Nyumba track video.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </section>
@@ -479,7 +483,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
+                    <a href="#hero" class="logo">
                         <img src="assets/logo.png" alt="Nyumba Track" class="logo-img footer-logo-img">
                     </a>
                     <p class="footer-mission">
@@ -492,26 +496,26 @@
                         <ul>
                             <li><a href="#why-choose-us">Why Choose Us</a></li>
                             <li><a href="#how-it-works">How It Works</a></li>
-                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#contact">Pricing</a></li>
                             <li><a href="#demo-video">Demo</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="#hero">About Us</a></li>
                             <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#contact">Careers</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4>Support</h4>
                         <ul>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#contact">Help Center</a></li>
+                            <li><a href="#how-it-works">Documentation</a></li>
+                            <li><a href="#hero">Privacy Policy</a></li>
+                            <li><a href="#hero">Terms of Service</a></li>
                         </ul>
                     </div>
                 </div>

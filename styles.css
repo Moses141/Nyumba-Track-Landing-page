@@ -762,26 +762,17 @@ ul {
 }
 
 .video-wrapper {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
-    aspect-ratio: 16 / 9;
-    background: var(--gray-200);
+    background: #000;
 }
 
-.video-wrapper iframe {
+.video-wrapper video {
     width: 100%;
-    height: 100%;
     display: block;
-}
-
-.video-placeholder-note {
-    margin-top: 1rem;
-    font-size: 0.8125rem;
-    color: var(--gray-500);
-    text-align: center;
 }
 
 /* ===== WHY CHOOSE US SECTION ===== */
