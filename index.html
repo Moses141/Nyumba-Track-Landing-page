@@ -1,532 +1,805 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1FS83VMXV"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z1FS83VMXV"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-Z1FS83VMXV');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Z1FS83VMXV");
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nyumba Track - Digital property management system for landlords. Simple rent tracking, tenant management, and rental record software for small property owners in Uganda.">
-    <meta name="keywords" content="property management system, landlord rent tracking, rental management software, property management for small landlords, digital rent record system">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nyumba Track - Digital property management system for landlords. Simple rent tracking, tenant management, and rental record software for small property owners in Uganda."
+    />
+    <meta
+      name="keywords"
+      content="property management system, landlord rent tracking, rental management software, property management for small landlords, digital rent record system"
+    />
     <title>Nyumba Track | Smart Property Management for Landlords</title>
-    <link rel="icon" href="assets/logo-square.png" type="image/png">
-    <link rel="apple-touch-icon" href="assets/logo-square.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="icon" href="assets/logo-square.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/logo-square.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>emailjs.init('4AbDzHdzBSq2ANUaP');</script>
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#hero" class="logo">
-                <img src="assets/logo.png" alt="Nyumba Track" class="logo-img">
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#why-choose-us">Why Choose Us</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
-            </ul>
-        </div>
+      <div class="container nav-container">
+        <a href="#hero" class="logo">
+          <img src="assets/logo.png" alt="Nyumba Track" class="logo-img" />
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#why-choose-us">Why Choose Us</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-deco" aria-hidden="true">
-            <span class="hero-dot hero-dot-1"></span>
-            <span class="hero-dot hero-dot-2"></span>
-            <span class="hero-dot hero-dot-3"></span>
-            <span class="hero-dot hero-dot-4"></span>
+      <div class="hero-deco" aria-hidden="true">
+        <span class="hero-dot hero-dot-1"></span>
+        <span class="hero-dot hero-dot-2"></span>
+        <span class="hero-dot hero-dot-3"></span>
+        <span class="hero-dot hero-dot-4"></span>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Stop Losing Money to
+            <span class="highlight">Disorganized</span> Rental Records
+          </h1>
+          <p class="hero-subtitle">
+            Nyumba Track is the simple property management system for landlords.
+            Track tenants, manage rooms, and never miss a rent payment.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              Start Managing Smarter
+              <svg
+                class="btn-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#demo-video" class="btn btn-secondary btn-lg">
+              <svg
+                class="btn-icon-left"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              Watch Demo
+            </a>
+          </div>
         </div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Stop Losing Money to <span class="highlight">Disorganized</span> Rental Records
-                </h1>
-                <p class="hero-subtitle">
-                    Nyumba Track is the simple property management system for landlords. Track tenants, manage rooms, and never miss a rent payment.
-                </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary btn-lg">
-                        Start Managing Smarter
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="#demo-video" class="btn btn-secondary btn-lg">
-                        <svg class="btn-icon-left" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M8 5v14l11-7z"/>
-                        </svg>
-                        Watch Demo
-                    </a>
-                </div>
+        <div class="hero-image">
+          <div class="dashboard-mockup">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mockup-title">Nyumba Track Dashboard</span>
             </div>
-            <div class="hero-image">
-                <div class="dashboard-mockup">
-                    <div class="mockup-header">
-                        <div class="mockup-dots">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <span class="mockup-title">Nyumba Track Dashboard</span>
-                    </div>
-                    <img src="assets/dashboard.png" alt="Nyumba Track Dashboard - Property Management Interface" class="dashboard-screenshot">
-                </div>
-            </div>
+            <img
+              src="assets/dashboard.png"
+              alt="Nyumba Track Dashboard - Property Management Interface"
+              class="dashboard-screenshot"
+            />
+          </div>
         </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,64 C480,150 960,-20 1440,64 L1440,120 L0,120 Z" fill="#f8fafc"/>
-            </svg>
-        </div>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            d="M0,64 C480,150 960,-20 1440,64 L1440,120 L0,120 Z"
+            fill="#f8fafc"
+          />
+        </svg>
+      </div>
     </section>
 
     <!-- Demo Video Section (replace VIDEO_ID with your YouTube video ID) -->
     <section class="demo-video section-with-wave" id="demo-video">
-        <div class="section-wave section-wave-top" aria-hidden="true">
-            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="var(--gray-50)">
-                <path d="M0,80 L0,44 Q360,0 720,44 T1440,44 L1440,80 Z"/>
-            </svg>
+      <div class="section-wave section-wave-top" aria-hidden="true">
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          fill="var(--gray-50)"
+        >
+          <path d="M0,80 L0,44 Q360,0 720,44 T1440,44 L1440,80 Z" />
+        </svg>
+      </div>
+      <div class="demo-video-deco" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">See It In Action</span>
+          <h2 class="section-title">Watch a Quick Demo</h2>
+          <p class="section-subtitle">
+            See how Nyumba Track helps you manage properties in minutes.
+          </p>
         </div>
-        <div class="demo-video-deco" aria-hidden="true"></div>
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">See It In Action</span>
-                <h2 class="section-title">Watch a Quick Demo</h2>
-                <p class="section-subtitle">
-                    See how Nyumba Track helps you manage properties in minutes.
-                </p>
-            </div>
-            <div class="video-wrapper">
-                <video
-                    controls
-                    playsinline
-                    preload="metadata"
-                    poster="assets/dashboard.png"
-                    style="width:100%;border-radius:12px;background:#000;"
-                    title="Nyumba Track Demo"
-                >
-                    <source src="assets/Nyumba track video.MP4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <div class="video-wrapper">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="assets/dashboard.png"
+            style="width: 100%; border-radius: 12px; background: #000"
+            title="Nyumba Track Demo"
+          >
+            "assets/nyumba-track-video.mp4" Your browser does not support the
+            video tag.
+          </video>
         </div>
+      </div>
     </section>
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-us section-with-wave" id="why-choose-us">
-        <div class="section-wave section-wave-top section-wave-white" aria-hidden="true">
-            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-                <path d="M0,80 L0,20 Q360,60 720,20 T1440,60 L1440,80 Z" fill="var(--white)"/>
-            </svg>
+      <div
+        class="section-wave section-wave-top section-wave-white"
+        aria-hidden="true"
+      >
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path
+            d="M0,80 L0,20 Q360,60 720,20 T1440,60 L1440,80 Z"
+            fill="var(--white)"
+          />
+        </svg>
+      </div>
+      <div class="why-choose-deco" aria-hidden="true">
+        <span class="floating-shape shape-1"></span>
+        <span class="floating-shape shape-2"></span>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">What You Get With Nyumba Track</h2>
+          <p class="section-subtitle">
+            Simple, focused tools built for landlords like you.
+          </p>
         </div>
-        <div class="why-choose-deco" aria-hidden="true">
-            <span class="floating-shape shape-1"></span>
-            <span class="floating-shape shape-2"></span>
-        </div>
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Why Choose Us</span>
-                <h2 class="section-title">What You Get With Nyumba Track</h2>
-                <p class="section-subtitle">
-                    Simple, focused tools built for landlords like you.
-                </p>
-            </div>
-            <div class="why-choose-layout">
-                <ul class="why-choose-list">
-                    <li><span class="check">✓</span> Designed for small landlords</li>
-                    <li><span class="check">✓</span> Room-level management</li>
-                    <li><span class="check">✓</span> No technical skills needed</li>
-                    <li><span class="check">✓</span> Affordable monthly pricing</li>
-                    <li><span class="check">✓</span> Built for Ugandan landlords</li>
-                    <li><span class="check">✓</span> Simple—no enterprise bloat</li>
-                </ul>
+        <div class="why-choose-layout">
+          <ul class="why-choose-list">
+            <li><span class="check">✓</span> Designed for small landlords</li>
+            <li><span class="check">✓</span> Room-level management</li>
+            <li><span class="check">✓</span> No technical skills needed</li>
+            <li><span class="check">✓</span> Affordable monthly pricing</li>
+            <li><span class="check">✓</span> Built for Ugandan landlords</li>
+            <li><span class="check">✓</span> Simple—no enterprise bloat</li>
+          </ul>
 
-                <aside class="why-choose-contact" aria-label="Contact details">
-                    <div class="why-choose-contact-card">
-                        <div class="contact-card-header">
-                            <span class="contact-card-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                                </svg>
-                            </span>
-                            <div>
-                                <h3 class="contact-card-title">Talk to us</h3>
-                                <p class="contact-card-subtitle">Quick help and a demo when you’re ready.</p>
-                            </div>
-                        </div>
-                        <div class="contact-card-items">
-                            <a class="contact-card-item" href="mailto:itechcompany2024@gmail.com">
-                                <span class="item-label">Email</span>
-                                <span class="item-value">itechcompany2024@gmail.com</span>
-                            </a>
-                            <a class="contact-card-item" href="tel:+256781096682">
-                                <span class="item-label">Phone</span>
-                                <span class="item-value">+256 781 096 682</span>
-                            </a>
-                            <div class="contact-card-item is-static">
-                                <span class="item-label">Location</span>
-                                <span class="item-value">Kampala, Uganda</span>
-                            </div>
-                        </div>
-                        <div class="contact-card-actions">
-                            <a class="btn btn-primary btn-block" href="#contact">Send a Message</a>
-                        </div>
-                    </div>
-                </aside>
+          <aside class="why-choose-contact" aria-label="Contact details">
+            <div class="why-choose-contact-card">
+              <div class="contact-card-header">
+                <span class="contact-card-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="contact-card-title">Talk to us</h3>
+                  <p class="contact-card-subtitle">
+                    Quick help and a demo when you’re ready.
+                  </p>
+                </div>
+              </div>
+              <div class="contact-card-items">
+                <a
+                  class="contact-card-item"
+                  href="mailto:itechcompany2024@gmail.com"
+                >
+                  <span class="item-label">Email</span>
+                  <span class="item-value">itechcompany2024@gmail.com</span>
+                </a>
+                <a class="contact-card-item" href="tel:+256781096682">
+                  <span class="item-label">Phone</span>
+                  <span class="item-value">+256 781 096 682</span>
+                </a>
+                <div class="contact-card-item is-static">
+                  <span class="item-label">Location</span>
+                  <span class="item-value">Kampala, Uganda</span>
+                </div>
+              </div>
+              <div class="contact-card-actions">
+                <a class="btn btn-primary btn-block" href="#contact"
+                  >Send a Message</a
+                >
+              </div>
             </div>
+          </aside>
         </div>
+      </div>
     </section>
 
     <!-- Testimonials / Reviews Section -->
     <section class="testimonials section-with-wave" id="testimonials">
-        <div class="section-wave section-wave-top section-wave-green" aria-hidden="true">
-            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-                <path d="M0,100 L0,50 Q360,0 720,50 T1440,50 L1440,100 Z" fill="url(#testimonialGrad)"/>
-                <defs><linearGradient id="testimonialGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#1a5d3a"/><stop offset="100%" style="stop-color:#134429"/></linearGradient></defs>
-            </svg>
+      <div
+        class="section-wave section-wave-top section-wave-green"
+        aria-hidden="true"
+      >
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path
+            d="M0,100 L0,50 Q360,0 720,50 T1440,50 L1440,100 Z"
+            fill="url(#testimonialGrad)"
+          />
+          <defs>
+            <linearGradient
+              id="testimonialGrad"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="0%"
+            >
+              <stop offset="0%" style="stop-color: #1a5d3a" />
+              <stop offset="100%" style="stop-color: #134429" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="testimonials-deco" aria-hidden="true">
+        <span class="testimonial-ring ring-1"></span>
+        <span class="testimonial-ring ring-2"></span>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Reviews</span>
+          <h2 class="section-title">What Our Users Say</h2>
+          <p class="section-subtitle">
+            Landlords share their experience with Nyumba Track.
+          </p>
         </div>
-        <div class="testimonials-deco" aria-hidden="true">
-            <span class="testimonial-ring ring-1"></span>
-            <span class="testimonial-ring ring-2"></span>
-        </div>
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Reviews</span>
-                <h2 class="section-title">What Our Users Say</h2>
-                <p class="section-subtitle">
-                    Landlords share their experience with Nyumba Track.
-                </p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p>
+                "Before Nyumba Track, I was using three different notebooks to
+                track my 12 rooms. Now everything is in one place. Last month, a
+                tenant claimed she had paid—I showed her the digital record, and
+                the dispute was over in seconds."
+              </p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"Before Nyumba Track, I was using three different notebooks to track my 12 rooms. Now everything is in one place. Last month, a tenant claimed she had paid—I showed her the digital record, and the dispute was over in seconds."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SM</div>
-                        <div class="author-info">
-                            <strong>Sarah Mukasa</strong>
-                            <span>Property Owner, Kampala • 12 Units</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"I'm not good with computers, but Nyumba Track is so simple that even I can use it. My rent collection improved by 40% in the first three months because I finally knew exactly who owed what and when."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JO</div>
-                        <div class="author-info">
-                            <strong>James Okello</strong>
-                            <span>Landlord, Entebbe • 8 Units</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"The room management feature is exactly what I needed. I have a building with 24 rooms, and now I can see at a glance which are occupied, vacant, or under maintenance. It's saved me so much time and confusion."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">PN</div>
-                        <div class="author-info">
-                            <strong>Patricia Nambi</strong>
-                            <span>Property Manager, Jinja • 24 Units</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-info">
+                <strong>Sarah Mukasa</strong>
+                <span>Property Owner, Kampala • 12 Units</span>
+              </div>
             </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p>
+                "I'm not good with computers, but Nyumba Track is so simple that
+                even I can use it. My rent collection improved by 40% in the
+                first three months because I finally knew exactly who owed what
+                and when."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">JO</div>
+              <div class="author-info">
+                <strong>James Okello</strong>
+                <span>Landlord, Entebbe • 8 Units</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">★★★★★</div>
+              <p>
+                "The room management feature is exactly what I needed. I have a
+                building with 24 rooms, and now I can see at a glance which are
+                occupied, vacant, or under maintenance. It's saved me so much
+                time and confusion."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">PN</div>
+              <div class="author-info">
+                <strong>Patricia Nambi</strong>
+                <span>Property Manager, Jinja • 24 Units</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="section-wave section-wave-bottom section-wave-green" aria-hidden="true">
-            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-                <path d="M0,0 L0,40 Q360,80 720,40 T1440,40 L1440,0 Z" fill="var(--gray-50)"/>
-            </svg>
-        </div>
+      </div>
+      <div
+        class="section-wave section-wave-bottom section-wave-green"
+        aria-hidden="true"
+      >
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path
+            d="M0,0 L0,40 Q360,80 720,40 T1440,40 L1440,0 Z"
+            fill="var(--gray-50)"
+          />
+        </svg>
+      </div>
     </section>
 
     <!-- How It Works Section -->
     <section class="how-it-works section-with-wave" id="how-it-works">
-        <div class="section-wave section-wave-top" aria-hidden="true">
-            <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
-                <path d="M0,60 L0,30 Q360,0 720,30 T1440,30 L1440,60 Z" fill="var(--gray-50)"/>
-            </svg>
+      <div class="section-wave section-wave-top" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <path
+            d="M0,60 L0,30 Q360,0 720,30 T1440,30 L1440,60 Z"
+            fill="var(--gray-50)"
+          />
+        </svg>
+      </div>
+      <div class="how-it-works-deco" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">How It Works</span>
+          <h2 class="section-title">Get Started in 3 Simple Steps</h2>
+          <p class="section-subtitle">
+            From sign-up to full property control in minutes, not days.
+          </p>
         </div>
-        <div class="how-it-works-deco" aria-hidden="true"></div>
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">How It Works</span>
-                <h2 class="section-title">Get Started in 3 Simple Steps</h2>
-                <p class="section-subtitle">
-                    From sign-up to full property control in minutes, not days.
-                </p>
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Add Your Property & Rooms</h3>
+              <p>
+                Create your property profile and add all your rooms in minutes.
+                Set rent amounts, room types, and any special notes.
+              </p>
             </div>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Add Your Property & Rooms</h3>
-                        <p>Create your property profile and add all your rooms in minutes. Set rent amounts, room types, and any special notes.</p>
-                    </div>
-                    <div class="step-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9 22 9 12 15 12 15 22"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Assign Tenants & Track Rent</h3>
-                        <p>Add tenant information and assign them to rooms. Record payments as they come in with just a few taps.</p>
-                    </div>
-                    <div class="step-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Monitor Payments & Balances</h3>
-                        <p>View your dashboard anytime to see payment status, outstanding balances, and overall property performance.</p>
-                    </div>
-                    <div class="step-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="20" x2="18" y2="10"/>
-                            <line x1="12" y1="20" x2="12" y2="4"/>
-                            <line x1="6" y1="20" x2="6" y2="14"/>
-                        </svg>
-                    </div>
-                </div>
+            <div class="step-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
             </div>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Assign Tenants & Track Rent</h3>
+              <p>
+                Add tenant information and assign them to rooms. Record payments
+                as they come in with just a few taps.
+              </p>
+            </div>
+            <div class="step-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Monitor Payments & Balances</h3>
+              <p>
+                View your dashboard anytime to see payment status, outstanding
+                balances, and overall property performance.
+              </p>
+            </div>
+            <div class="step-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section section-with-wave" id="cta">
-        <div class="section-wave section-wave-top section-wave-cta" aria-hidden="true">
-            <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
-                <path d="M0,70 L0,35 Q360,0 720,35 T1440,35 L1440,70 Z" fill="var(--accent)"/>
-            </svg>
+      <div
+        class="section-wave section-wave-top section-wave-cta"
+        aria-hidden="true"
+      >
+        <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+          <path
+            d="M0,70 L0,35 Q360,0 720,35 T1440,35 L1440,70 Z"
+            fill="var(--accent)"
+          />
+        </svg>
+      </div>
+      <div class="cta-deco" aria-hidden="true">
+        <span class="cta-circle cta-circle-1"></span>
+        <span class="cta-circle cta-circle-2"></span>
+      </div>
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Take Control of Your Rentals?</h2>
+          <p>
+            Join thousands of landlords who have simplified their property
+            management with Nyumba Track. Start your free trial today—no credit
+            card required.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-white btn-lg">
+              Start Free Trial
+              <svg
+                class="btn-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline-white btn-lg"
+              >Request a Demo</a
+            >
+          </div>
+          <p class="cta-note">
+            Free 14-day trial • No credit card • Cancel anytime
+          </p>
         </div>
-        <div class="cta-deco" aria-hidden="true">
-            <span class="cta-circle cta-circle-1"></span>
-            <span class="cta-circle cta-circle-2"></span>
-        </div>
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Take Control of Your Rentals?</h2>
-                <p>Join thousands of landlords who have simplified their property management with Nyumba Track. Start your free trial today—no credit card required.</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-white btn-lg">
-                        Start Free Trial
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="#contact" class="btn btn-outline-white btn-lg">Request a Demo</a>
-                </div>
-                <p class="cta-note">Free 14-day trial • No credit card • Cancel anytime</p>
-            </div>
-        </div>
-        <div class="section-wave section-wave-bottom section-wave-cta-to-contact" aria-hidden="true">
-            <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
-                <path d="M0,0 L0,50 Q360,90 720,50 T1440,50 L1440,0 Z" fill="url(#ctaToContactGrad)"/>
-                <defs><linearGradient id="ctaToContactGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#22c55e"/><stop offset="100%" style="stop-color:#e8f5e9"/></linearGradient></defs>
-            </svg>
-        </div>
+      </div>
+      <div
+        class="section-wave section-wave-bottom section-wave-cta-to-contact"
+        aria-hidden="true"
+      >
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+          <path
+            d="M0,0 L0,50 Q360,90 720,50 T1440,50 L1440,0 Z"
+            fill="url(#ctaToContactGrad)"
+          />
+          <defs>
+            <linearGradient
+              id="ctaToContactGrad"
+              x1="0%"
+              y1="0%"
+              x2="0%"
+              y2="100%"
+            >
+              <stop offset="0%" style="stop-color: #22c55e" />
+              <stop offset="100%" style="stop-color: #e8f5e9" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
     </section>
 
     <!-- Problems We Address + Form Section (creative layout, no contact block) -->
     <section class="contact problems-and-form" id="contact">
-        <div class="section-bg-deco" aria-hidden="true">
-            <div class="deco-blob deco-blob-1"></div>
-            <div class="deco-blob deco-blob-2"></div>
-            <div class="deco-grid-pattern"></div>
+      <div class="section-bg-deco" aria-hidden="true">
+        <div class="deco-blob deco-blob-1"></div>
+        <div class="deco-blob deco-blob-2"></div>
+        <div class="deco-grid-pattern"></div>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get Started</span>
+          <h2 class="section-title">Problems We Address</h2>
+          <p class="section-subtitle">
+            We help landlords solve these challenges. Tell us about your
+            properties below.
+          </p>
         </div>
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get Started</span>
-                <h2 class="section-title">Problems We Address</h2>
-                <p class="section-subtitle">
-                    We help landlords solve these challenges. Tell us about your properties below.
-                </p>
-            </div>
 
-            <div class="problems-bento">
-                <div class="problem-card bento-card bento-1">
-                    <span class="bento-number" aria-hidden="true">01</span>
-                    <div class="problem-image">
-                        <img src="assets/problems/scattered-records.jpg" alt="Scattered records" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-                        <div class="problem-image-fallback">Scattered Records</div>
-                    </div>
-                    <div class="bento-content">
-                        <h4>Scattered Records</h4>
-                        <p>Notebooks and spreadsheets everywhere. We bring everything into one place.</p>
-                    </div>
-                </div>
-                <div class="problem-card bento-card bento-2">
-                    <span class="bento-number" aria-hidden="true">02</span>
-                    <div class="problem-image">
-                        <img src="assets/problems/late-payments.jpg" alt="Late payments" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-                        <div class="problem-image-fallback">Late Payments</div>
-                    </div>
-                    <div class="bento-content">
-                        <h4>Late Payments</h4>
-                        <p>Clear tracking so you know who has paid and who owes—no more guessing.</p>
-                    </div>
-                </div>
-                <div class="problem-card bento-card bento-3">
-                    <span class="bento-number" aria-hidden="true">03</span>
-                    <div class="problem-image">
-                        <img src="assets/problems/tenant-disputes.jpg" alt="Tenant disputes" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-                        <div class="problem-image-fallback">Tenant Disputes</div>
-                    </div>
-                    <div class="bento-content">
-                        <h4>Tenant Disputes</h4>
-                        <p>Digital records that protect both you and your tenants.</p>
-                    </div>
-                </div>
-                <div class="problem-card bento-card bento-4">
-                    <span class="bento-number" aria-hidden="true">04</span>
-                    <div class="problem-image">
-                        <img src="assets/problems/room-confusion.jpg" alt="Room confusion" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-                        <div class="problem-image-fallback">Room Confusion</div>
-                    </div>
-                    <div class="bento-content">
-                        <h4>Room Confusion</h4>
-                        <p>See at a glance which rooms are occupied, vacant, or under maintenance.</p>
-                    </div>
-                </div>
+        <div class="problems-bento">
+          <div class="problem-card bento-card bento-1">
+            <span class="bento-number" aria-hidden="true">01</span>
+            <div class="problem-image">
+              <img
+                src="assets/problems/scattered-records.jpg"
+                alt="Scattered records"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.classList.add('show');
+                "
+              />
+              <div class="problem-image-fallback">Scattered Records</div>
             </div>
-
-            <div class="contact-form-wrapper form-card">
-                <div class="form-card-accent"></div>
-                <div class="form-card-inner">
-                    <div class="form-header">
-                        <span class="form-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                        </span>
-                        <h3 class="form-heading">Send us a message</h3>
-                        <p class="form-subheading">We’ll get back to you soon.</p>
-                    </div>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+256 700 000 000">
-                            </div>
-                            <div class="form-group">
-                                <label for="properties">Properties / Rooms</label>
-                                <select id="properties" name="properties">
-                                    <option value="">Select...</option>
-                                    <option value="1-5">1-5 rooms</option>
-                                    <option value="6-15">6-15 rooms</option>
-                                    <option value="16-30">16-30 rooms</option>
-                                    <option value="31-50">31-50 rooms</option>
-                                    <option value="50+">50+ rooms</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your property management needs..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">
-                            Send Message
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13"/>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
+            <div class="bento-content">
+              <h4>Scattered Records</h4>
+              <p>
+                Notebooks and spreadsheets everywhere. We bring everything into
+                one place.
+              </p>
             </div>
+          </div>
+          <div class="problem-card bento-card bento-2">
+            <span class="bento-number" aria-hidden="true">02</span>
+            <div class="problem-image">
+              <img
+                src="assets/problems/late-payments.jpg"
+                alt="Late payments"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.classList.add('show');
+                "
+              />
+              <div class="problem-image-fallback">Late Payments</div>
+            </div>
+            <div class="bento-content">
+              <h4>Late Payments</h4>
+              <p>
+                Clear tracking so you know who has paid and who owes—no more
+                guessing.
+              </p>
+            </div>
+          </div>
+          <div class="problem-card bento-card bento-3">
+            <span class="bento-number" aria-hidden="true">03</span>
+            <div class="problem-image">
+              <img
+                src="assets/problems/tenant-disputes.jpg"
+                alt="Tenant disputes"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.classList.add('show');
+                "
+              />
+              <div class="problem-image-fallback">Tenant Disputes</div>
+            </div>
+            <div class="bento-content">
+              <h4>Tenant Disputes</h4>
+              <p>Digital records that protect both you and your tenants.</p>
+            </div>
+          </div>
+          <div class="problem-card bento-card bento-4">
+            <span class="bento-number" aria-hidden="true">04</span>
+            <div class="problem-image">
+              <img
+                src="assets/problems/room-confusion.jpg"
+                alt="Room confusion"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.classList.add('show');
+                "
+              />
+              <div class="problem-image-fallback">Room Confusion</div>
+            </div>
+            <div class="bento-content">
+              <h4>Room Confusion</h4>
+              <p>
+                See at a glance which rooms are occupied, vacant, or under
+                maintenance.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div class="contact-form-wrapper form-card">
+          <div class="form-card-accent"></div>
+          <div class="form-card-inner">
+            <div class="form-header">
+              <span class="form-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+              </span>
+              <h3 class="form-heading">Send us a message</h3>
+              <p class="form-subheading">We’ll get back to you soon.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+256 700 000 000"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="properties">Properties / Rooms</label>
+                  <select id="properties" name="properties">
+                    <option value="">Select...</option>
+                    <option value="1-5">1-5 rooms</option>
+                    <option value="6-15">6-15 rooms</option>
+                    <option value="16-30">16-30 rooms</option>
+                    <option value="31-50">31-50 rooms</option>
+                    <option value="50+">50+ rooms</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your property management needs..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message
+                <svg
+                  class="btn-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#hero" class="logo">
-                        <img src="assets/logo.png" alt="Nyumba Track" class="logo-img footer-logo-img">
-                    </a>
-                    <p class="footer-mission">
-                        Empowering landlords across Uganda with simple, affordable digital property management tools. We believe every property owner deserves clarity and control over their rentals.
-                    </p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="#why-choose-us">Why Choose Us</a></li>
-                            <li><a href="#how-it-works">How It Works</a></li>
-                            <li><a href="#contact">Pricing</a></li>
-                            <li><a href="#demo-video">Demo</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#hero">About Us</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#contact">Careers</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <ul>
-                            <li><a href="#contact">Help Center</a></li>
-                            <li><a href="#how-it-works">Documentation</a></li>
-                            <li><a href="#hero">Privacy Policy</a></li>
-                            <li><a href="#hero">Terms of Service</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#hero" class="logo">
+              <img
+                src="assets/logo.png"
+                alt="Nyumba Track"
+                class="logo-img footer-logo-img"
+              />
+            </a>
+            <p class="footer-mission">
+              Empowering landlords across Uganda with simple, affordable digital
+              property management tools. We believe every property owner
+              deserves clarity and control over their rentals.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Pricing</a></li>
+                <li><a href="#demo-video">Demo</a></li>
+              </ul>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Nyumba Track. All rights reserved.</p>
-                
+            <div class="footer-column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#hero">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
             </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#contact">Help Center</a></li>
+                <li><a href="#how-it-works">Documentation</a></li>
+                <li><a href="#hero">Privacy Policy</a></li>
+                <li><a href="#hero">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Nyumba Track. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+
+    <!-- EmailJS form handler -->
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var btn = this.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+        btn.textContent = 'Sending…';
+        btn.disabled = true;
+
+        emailjs.sendForm('service_f17pbie', 'template_c2vzcmh', this)
+          .then(function() {
+            btn.textContent = '✓ Message Sent!';
+            btn.style.backgroundColor = '#22c55e';
+            document.getElementById('contactForm').reset();
+            setTimeout(function() {
+              btn.textContent = originalText;
+              btn.disabled = false;
+              btn.style.backgroundColor = '';
+            }, 4000);
+          }, function(error) {
+            console.error('EmailJS error:', error);
+            btn.textContent = 'Failed — Try Again';
+            btn.disabled = false;
+          });
+      });
+    </script>
+  </body>
 </html>
