@@ -779,16 +779,17 @@
     <script>
       document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault();
-        var btn = this.querySelector('button[type="submit"]');
+        var form = this;
+        var btn = form.querySelector('button[type="submit"]');
         var originalText = btn.textContent;
         btn.textContent = 'Sending…';
         btn.disabled = true;
 
-        emailjs.sendForm('service_f17pbie', 'template_c2vzcmh', this)
+        emailjs.sendForm('service_f17pbie', 'template_c4o06lh', form)
           .then(function() {
             btn.textContent = '✓ Message Sent!';
             btn.style.backgroundColor = '#22c55e';
-            document.getElementById('contactForm').reset();
+            form.reset();
             setTimeout(function() {
               btn.textContent = originalText;
               btn.disabled = false;
@@ -796,6 +797,8 @@
             }, 4000);
           }, function(error) {
             console.error('EmailJS error:', error);
+            var msg = (error && error.text) ? error.text : JSON.stringify(error);
+            alert('EmailJS error: ' + msg);
             btn.textContent = 'Failed — Try Again';
             btn.disabled = false;
           });
